@@ -1,0 +1,73 @@
+.header {
+    background-color: $hf-bg;
+    padding: 15px 0;
+
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .humburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40px;
+            height: 30px;
+            cursor: pointer;
+
+            span {
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                transition: 0.5s all;
+            }
+        }
+    }
+
+    &__phone,
+    &__email {
+        font-size: 20px;
+        line-height: 23px;
+        color: #fff;
+    }
+
+    &__phone {
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background: url('../icons/header/phone-icon.svg') center no-repeat;
+        }
+    }
+
+    &__email {
+        position: relative;
+        padding-left: 35px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 25px;
+            height: 20px;
+            background: url('../icons/header/email-icon.svg') center no-repeat;
+        }
+
+    }
+
+    &__button {
+        width: 257px;
+        height: 60px;
+    }
+}

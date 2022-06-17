@@ -1,0 +1,14 @@
+.footer {
+    padding: 34px 0;
+    background-color: $hf-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__copy {
+        color: #fff;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+}

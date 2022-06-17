@@ -1,0 +1,27 @@
+.certificates {
+    padding-top: 130px;
+    background-color: $color-bg;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__descr {
+        margin-bottom: 65px;
+    }
+
+    &__block {
+        width: 770px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__block-mobile {
+        display: none;
+    }
+
+    &__arrows {
+        display: none;
+    }
+}

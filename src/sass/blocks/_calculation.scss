@@ -1,0 +1,109 @@
+.caclulation {
+    padding-top: 124px;
+    padding-bottom: 394px;
+    background: $color-bg url('../img/caclulation/caclulation-bg.png') bottom -35px left 155px no-repeat;
+    box-sizing: border-box;
+
+    &__title {
+        margin-bottom: 36px;
+    }
+
+    &__descr {
+        margin-bottom: 72px;
+    }
+
+    &__block-form {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        row-gap: 25px;
+        z-index: 15;
+    }
+
+    &__block-group {
+        width: 365px;
+        // margin-bottom: 19px;
+
+        // &:nth-child(4),
+        // &:nth-child(5),
+        // &:nth-child(6) {
+        //     margin-bottom: 0;
+        // }
+    }
+
+    &__block-label {
+        position: relative;
+        display: block;
+
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+        }
+    }
+
+    &__block-input {
+        width: 365px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 21px;
+        border-radius: 5px;
+        padding: 0 23px;
+        border: 1px solid rgba($btn-color, 0.9);
+        box-shadow: 0px 0px 6px rgba(9, 19, 37, 0.3);
+
+        &::placeholder {
+            color: rgba($text-main-color, .7);
+        }
+    }
+
+    &__block-text {
+        display: block;
+        font-size: 13px;
+        line-height: 15px;
+        max-width: 354px;
+        margin-bottom: 10px;
+    }
+
+    &__block-text_mobile {
+        display: none;
+    }
+
+    &__block-button {
+        width: 365px;
+        height: 60px;
+        box-shadow: 0px 0px 6px rgba(9, 19, 37, 0.3);
+        border-radius: 5px;
+    }
+
+    &__select {
+        position: relative;
+        width: 365px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 21px;
+        background-color: #fff;
+        padding: 0 23px;
+        border: 1px solid rgba($btn-color, 0.9);
+        box-shadow: 0px 0px 6px rgba(9, 19, 37, 0.3);
+        border-radius: 5px;
+        appearance: none;
+        background: #fff url('../icons/caclulation/caclulation-arrow.svg') no-repeat right;
+        background-position-x: calc(100% - 20px);
+        cursor: pointer;
+    }
+
+}

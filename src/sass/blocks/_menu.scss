@@ -1,0 +1,98 @@
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__block {
+        padding: 133px 0 0 80px;
+        position: absolute;
+        z-index: 3;
+        width: 530px;
+        height: 100vh;
+        right: 0;
+        background-color: $hf-bg;
+    }
+
+    &__block-close {
+        position: absolute;
+        left: 30px;
+        top: 29px;
+        cursor: pointer;
+    }
+
+
+    &__item {
+        font-size: 28px;
+        line-height: 33px;
+        color: #fff;
+        margin-bottom: 28px;
+        transition: all .5s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__contacts {
+        display: none;
+
+        &-phone {
+            position: relative;
+            padding-left: 30px;
+            display: block;
+            color: #fff;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background: url('../icons/header/phone-icon.svg') center no-repeat;
+            }
+        }
+
+        &-email {
+            position: relative;
+            padding-left: 35px;
+            display: block;
+            color: #fff;
+            font-size: 24px;
+            line-height: 28px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 25px;
+                height: 20px;
+                background: url('../icons/header/email-icon.svg') center no-repeat;
+            }
+
+        }
+    }
+}

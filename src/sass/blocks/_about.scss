@@ -1,0 +1,40 @@
+.about {
+    padding-top: 108px;
+    background-color: $color-bg;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &__title-mobile {
+        display: none;
+    }
+
+    &__content-descr {
+        font-size: 20px;
+        line-height: 24px;
+        color: $text-main-color;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content-trigger {
+        display: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $btn-color;
+        text-decoration: underline;
+    }
+}

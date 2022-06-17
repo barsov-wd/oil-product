@@ -1,0 +1,29 @@
+.customers {
+    padding-top: 142px;
+    padding-bottom: 51px;
+    background-color: $color-bg;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__descr {
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        width: 1540px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__wrapper-mobile {
+        display: none;
+    }
+
+    &__arrows {
+        display: none;
+    }
+}

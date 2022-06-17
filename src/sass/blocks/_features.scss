@@ -1,0 +1,24 @@
+.features {
+    padding-top: 65px;
+    background-color: $color-bg;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__item-image {
+        margin-bottom: 15px;
+    }
+
+    &__item-descr {
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-main-color;
+    }
+}

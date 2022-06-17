@@ -1,0 +1,69 @@
+.questions {
+    padding: 145px 0;
+    background-color: $color-bg;
+
+    &__title {
+        text-align: left
+    }
+
+    &__title-color {
+        display: block;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__contacts-info,
+    &__contacts {
+        font-size: 20px;
+        line-height: 24px;
+        color: $text-main-color;
+    }
+
+    &__contacts-info {
+        margin-bottom: 25px;
+    }
+
+    &__contacts {
+        margin-bottom: 50px;
+    }
+
+    &__form {
+        width: 493px;
+    }
+
+    &__input,
+    &__button {
+        width: 100%;
+        height: 60px;
+    }
+
+    &__input {
+        border: 1px solid $btn-color;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 21px;
+
+        &::placeholder {
+            color: rgba(25, 25, 25, .4);
+        }
+    }
+
+    &__map {
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+        border-radius: 5px;
+
+        iframe {
+            width: 898px;
+            height: 596px;
+        }
+    }
+}

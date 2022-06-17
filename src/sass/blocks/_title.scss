@@ -1,0 +1,12 @@
+.title {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+    color: $btn-color;
+    text-align: center;
+
+    &_color {
+        color: $text-color;
+        font-weight: 900;
+    }
+}

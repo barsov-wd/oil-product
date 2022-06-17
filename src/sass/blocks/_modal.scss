@@ -1,0 +1,129 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .56);
+    z-index: 50;
+}
+
+.overlay-text {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    z-index: 50;
+}
+
+.modal {
+
+    &__dialog,
+    &__thanks {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        width: 1140px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.25);
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__dialog {
+        height: 660px;
+        padding: 80px 0 67px 0;
+    }
+
+    &__dialog-close {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        cursor: pointer;
+    }
+
+    &__dialog-title {
+        margin-bottom: 30px;
+    }
+
+    &__dialog-descr {
+        margin-bottom: 59px;
+    }
+
+    &__dialog-form {
+        width: 486px;
+        margin: 0 auto;
+    }
+
+    &__dialog-input,
+    &__dialog-button {
+        width: 100%;
+        height: 60px;
+    }
+
+    &__dialog-input {
+        border: none;
+        border: 1px solid $btn-color;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 20px;
+        line-height: 23px;
+
+        &::placeholder {
+            color: rgba(25, 25, 25, 0.7);
+        }
+    }
+
+    &__thanks {
+        padding: 120px 0;
+        height: 600px;
+    }
+
+    &__thanks-close {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        cursor: pointer;
+    }
+
+    &__thanks-title {
+        margin-bottom: 35px;
+    }
+
+    &__thanks-descr {
+        margin-bottom: 80px;
+    }
+
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        padding: 83px 10px 93px;
+        width: 100vw;
+        height: 100vh;
+        background-color: $color-bg;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+
+        &__close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__descr--first {
+            margin-bottom: 25px;
+        }
+    }
+}

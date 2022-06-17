@@ -11,6 +11,710 @@
 </head>
 
 <body>
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__block-close">
+                <img src="./icons/menu/menu-close.svg" alt="menu-close">
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#bunkering" class="menu__link">
+                        Бункеровка
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#caclulation" class="menu__link">
+                        Рассчитать стоимость
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#products" class="menu__link">
+                        Продукция
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">
+                        О компании
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#certificates" class="menu__link">
+                        Сертифекаты качества
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#customers" class="menu__link">
+                        Наши клиенты
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#questions" class="menu__link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="menu__contacts">
+                <a href="tel:+78462219617" class="menu__contacts-phone">8 (846) 221-96-17</a>
+                <a href="mailto:info@npsnab.com" class="menu__contacts-email">info@npsnab.com</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <picture class="header__logo">
+                    <source srcset="./img/header/header-logo-mobile.png" media="(max-width: 991px)">
+                    <img src="./img/header/header-logo.png" alt="header-logo">
+                </picture>
+                <a href="tel:+78462219617" class="header__phone">8 (846) 221-96-17</a>
+                <a href="mailto:info@npsnab.com" class="header__email">info@npsnab.com</a>
+                <button class="button header__button" data-modal>Бесплатная консультация</button>
+                <div class="humburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__block">
+                <h2 class="promo__title">
+                    Доставка <span class="promo__title_color">ГСМ <span class="promo__title_ttl">и</span> <br>
+                        бункеровка топливом</span> <br>
+                    оптом
+                </h2>
+                <div class="promo__subtitle">
+                    Срок поставки 1 день
+                </div>
+                <div class="promo__text">
+                    Минимальный заказ 2.5 тонны
+                </div>
+                <button class="button promo__button" data-modal>Рассчитать стоимость</button>
+            </div>
+        </div>
+    </section>
+    <!-- /.promo -->
+
+    <div class="features">
+        <div class="container">
+            <div class="features__wrapper">
+                <div class="features__item">
+                    <img src="./img/features/features-image-1.png" alt="features-image-1" class="features__item-image">
+                    <p class="features__item-descr">
+                        Покупаем топливо <br> на бирже
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-2.png" alt="features-image-2" class="features__item-image">
+                    <p class="features__item-descr">
+                        Цена ниже, чем <br> на заводах
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-3.png" alt="features-image-3" class="features__item-image">
+                    <p class="features__item-descr">
+                        Доставка <br>за 1 день
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-4.png" alt="features-image-4" class="features__item-image">
+                    <p class="features__item-descr">
+                        Топливо самого <br> высшего качества
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-5.png" alt="features-image-5" class="features__item-image">
+                    <p class="features__item-descr">
+                        7 лет <br> на рынке
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-6.png" alt="features-image-6" class="features__item-image">
+                    <p class="features__item-descr">
+                        топ 10 компаний <br> по ПФО
+                    </p>
+                </div>
+                <div class="features__item">
+                    <img src="./img/features/features-image-7.png" alt="features-image-7" class="features__item-image">
+                    <p class="features__item-descr">
+                        Отсрочка <br> платежа
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.features -->
+
+    <section class="caclulation">
+        <div class="container">
+            <h2 class="title caclulation__title">Рассчитайте примерную
+                <span class="title_color">стоимость доставки топлива</span>
+            </h2>
+            <p class="descr caclulation__descr">
+                Для расчета укажите пункты отправления и прибытия прямо на карте
+                или впишите названия населенных <br> пунктов в соответствующие поля
+            </p>
+            <div class="caclulation__block">
+                <form action="#" class="caclulation__block-form">
+                    <div class="caclulation__block-group">
+                        <select class="caclulation__select" name="" id="">
+                            <option value="" disabled selected>Выберите продукт</option>
+                            <option class="caclulation__select-option" value="">Дизельное топливо ГОСТ, от 36,96
+                                руб./литр</option>
+                            <option class="caclulation__select-option" value="">Дизельное топливо Евро 4, от 40,8
+                                руб./литр</option>
+                            <option class="caclulation__select-option" value="">Бензин 80 От 33,4 руб./литр</option>
+                            <option class="caclulation__select-option" value="">Бензин 92</option>
+                            <option class="caclulation__select-option" value="">Бензин 95</option>
+                            <option class="caclulation__select-option" value="">Печное топливо Темное, от 19,0 руб./литр
+                            </option>
+                            <option class="caclulation__select-option" value="">Печное топливо</option>
+                            <option class="caclulation__select-option" value="">Мазут
+                                топочный 100</option>
+                        </select>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <label class="caclulation__block-label">
+                            <input class="caclulation__block-input" type="text" placeholder="Oбъём">
+                            <span>м³</span>
+                        </label>
+                        <!-- <input class="caclulation__block-input" type="text"> -->
+                    </div>
+                    <div class="caclulation__block-group">
+                        <label class="caclulation__block-label">
+                            <input class="caclulation__block-input" type="text" placeholder="Точка отгрузки">
+                            <img src="./icons/caclulation/caclulation-icon.svg" alt="caclulation-icon">
+                        </label>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <label class="caclulation__block-label">
+                            <input class="caclulation__block-input" type="text" placeholder="Куда">
+                            <img src="./icons/caclulation/caclulation-icon.svg" alt="caclulation-icon">
+                        </label>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <select class="caclulation__select" name="" id="">
+                            <option value="" disabled selected>Бункеровка</option>
+                            <option class="caclulation__select-option" value="">Судовое саловязкое</option>
+                            <option class="caclulation__select-option" value="">Топливо с содержанием серы 0,1</option>
+                            <option class="caclulation__select-option" value="">Топливо с содержанием серы 0,5</option>
+                            <option class="caclulation__select-option" value="">Акцизное топливо</option>
+                            <option class="caclulation__select-option" value="">Без акцизное
+                                топливо</option>
+                            <option class="caclulation__select-option" value="">Печное топливо Темное, от 19,0
+                                руб./литр
+                            </option>
+                        </select>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <label class="caclulation__block-label">
+                            <input class="caclulation__block-input" type="text" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <label class="caclulation__block-label">
+                            <input class="caclulation__block-input" type="text" placeholder="Телефон">
+                        </label>
+                    </div>
+                    <div class="caclulation__block-group">
+                        <button data-modal class="button caclulation__block-button" data-modal>Рассчитать
+                            стоимость</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- /.caclulation -->
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="title products__title">
+                <span class="title_color products__title-color">Продукция</span>
+                Лучшее предложение на рынке
+            </h2>
+            <div class="products__wrapper">
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Печное топливо</div>
+                        <p class="products__item-descr">
+                            Темное, от 19,0 руб./литр
+                        </p>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-1.png" alt="products-image-1" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Дизельное топливо</div>
+                        <p class="products__item-descr">
+                            ГОСТ, от 36,96 руб./литр
+                        </p>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-2.png" alt="products-image-2" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Бензин 80</div>
+                        <p class="products__item-descr">
+                            От 33,4 руб./литр
+                        </p>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-3.png" alt="products-image-3" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Печное топливо</div>
+
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-1.png" alt="products-image-1" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Дизельное топливо</div>
+                        <p class="products__item-descr">
+                            Евро 4, от 40,8 руб./литр
+                        </p>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-2.png" alt="products-image-2" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Бензин 92</div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-3.png" alt="products-image-3" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Мазут <br>
+                            топочный 100
+                        </div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-4.png" alt="products-image-4" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Дизельное топливо</div>
+                        <p class="products__item-descr">
+                            Евро 5, от 40,9 руб./литр
+                        </p>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-2.png" alt="products-image-2" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Бензин 95</div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-3.png" alt="products-image-3" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Битум</div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-5.png" alt="products-image-5" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">Масла</div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-6.png" alt="products-image-6" class="products__item-image">
+                </div>
+                <div class="products__item">
+                    <div class="products__item-content">
+                        <div class="products__item-title">СМТ</div>
+                        <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                    </div>
+                    <img src="./img/products/products-image-7.png" alt="products-image-7" class="products__item-image">
+                </div>
+            </div>
+            <div class="products__wrapper-mobile">
+                <div class="products__slide">
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Печное топливо</div>
+                            <p class="products__item-descr">
+                                Темное, от 19,0 руб./литр
+                            </p>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-1.png" alt="products-image-1"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Дизельное топливо</div>
+                            <p class="products__item-descr">
+                                ГОСТ, от 36,96 руб./литр
+                            </p>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-2.png" alt="products-image-2"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Бензин 80</div>
+                            <p class="products__item-descr">
+                                От 33,4 руб./литр
+                            </p>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-3.png" alt="products-image-3"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Печное топливо</div>
+
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-1.png" alt="products-image-1"
+                            class="products__item-image">
+                    </div>
+                </div>
+                <div class="products__slide">
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Дизельное топливо</div>
+                            <p class="products__item-descr">
+                                Евро 4, от 40,8 руб./литр
+                            </p>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-2.png" alt="products-image-2"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Бензин 92</div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-3.png" alt="products-image-3"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Мазут <br>
+                                топочный 100
+                            </div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-4.png" alt="products-image-4"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Дизельное топливо</div>
+                            <p class="products__item-descr">
+                                Евро 5, от 40,9 руб./литр
+                            </p>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-2.png" alt="products-image-2"
+                            class="products__item-image">
+                    </div>
+                </div>
+                <div class="products__slide">
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Бензин 95</div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-3.png" alt="products-image-3"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Битум</div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-5.png" alt="products-image-5"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">Масла</div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-6.png" alt="products-image-6"
+                            class="products__item-image">
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__item-title">СМТ</div>
+                            <a href="#" class="products__item-link" data-modal>Подробнее</a>
+                        </div>
+                        <img src="./img/products/products-image-7.png" alt="products-image-7"
+                            class="products__item-image">
+                    </div>
+                </div>
+                <div class="products__arrows">
+                    <img src="./icons/products/producrs-arrow-prev.png" alt="products-arrow-prev"
+                        class="products__arrows-prev">
+                    <img src="./icons/products/products-arrow-next.png" alt="products-arrow-next"
+                        class="products__arrows-next">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.products -->
+
+    <section id="bunkering" class="bunkering">
+        <h2 class="title title_color bunkering__title">Бункеровка</h2>
+        <p class="descr bunkering__descr">
+            Заправка судна топливом и моторными маслами
+        </p>
+        <div class="bunkering__content">
+            <div class="container">
+                <div class="bunkering__ports">
+                    <div class="bunkering__inner">
+                        <div class="bunkering__port">
+                            порт <span class="bunkering__port-bold">Кавказ</span>
+                        </div>
+                        <div class="bunkering__port">
+                            порт <span class="bunkering__port-bold">Темрюк</span>
+                        </div>
+                        <div class="bunkering__port">
+                            порт <span class="bunkering__port-bold">Мурманск</span>
+                        </div>
+                    </div>
+                    <div class="bunkering__wrap">
+                        <div class="bunkering__port">
+                            порт <span class="bunkering__port-bold">Азов</span>
+                        </div>
+                        <div class="bunkering__port bunkering__port--last">
+                            порт <span class="bunkering__port-bold">Ростов</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="button bunkering__button" data-modal>Заказать бункеровку</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- ./bunkering -->
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="title title_color about__title about__title-mobile">О компании</h2>
+            <div class="about__wrapper">
+                <div class="about__content">
+                    <h2 class="title title_color about__title about__title-desctop">О компании</h2>
+                    <p class="about__content-descr about__content-descr--one">
+                        ООО «Дизель-Юг» оперативно поставляет нефтепродукты оптом в широком ассортименте. Мы ведем
+                        прямое сотрудничество с известными производственно-торговыми компаниями и предлагаем продукцию
+                        по низким ценам.
+                    </p>
+                    <p class="about__content-descr about__content-descr--two">
+                        Наша организация обладает солидным опытом работы. Не раз нам приходилось вести свою деятельность
+                        в непростых условиях. За нашими плечами есть успешная поставка нефтепродуктов оптом с
+                        последующей заправкой техники в высокогорный район (Красная поляна, 1230 метров над уровнем
+                        моря), а также заправка небольших кораблей непосредственно на акватории Черного моря.
+                        Мы имеем все необходимые для выполнения таких операций ресурсы.
+
+                    </p>
+                    <p class="about__content-descr about__content-descr--three">
+                        Главный офис «Дизель-Юг» находится в Краснодаре. Также есть филиалы в таких городах, как
+                        Ростов-на-Дону, Ставрополь, Симферополь и Воронеж.
+                    </p>
+                    <div class="about__content-trigger">Читать подробнее</div>
+                </div>
+                <img class="about__image" src="./img/about/about-image.png" alt="about-image">
+            </div>
+        </div>
+    </section>
+    <!-- /.about -->
+
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="title title_color certificates__title">Сертификаты качества</h2>
+            <p class="descr certificates__descr">
+                Мы работаем исключительно с производителями, которые зарекомендовали себя как надежные партнеры,
+                выпускающие только качественную продукцию и без срывов сроков поставляющие ее на наши базы.
+            </p>
+            <div class="certificates__block">
+                <img class="cerificaties__image" src="./img/certificates/certificaties-image-1.png"
+                    alt="cerificaties-image-1">
+                <img class="cerificaties__image" src="./img/certificates/certificaties-image-2.png"
+                    alt="cerificaties-image-2">
+                <img class="cerificaties__image" src="./img/certificates/certificaties-image-3.png"
+                    alt="cerificaties-image-3">
+            </div>
+            <div class="certificates__block-mobile">
+                <img class="certificates__image-mobile" src="./img/certificates/certificaties-image-1.png"
+                    alt="certificaties-image-1">
+                <img class="certificates__image-mobile" src="./img/certificates/certificaties-image-2.png"
+                    alt="certificaties-image-2">
+                <img class="certificates__image-mobile" src="./img/certificates/certificaties-image-3.png"
+                    alt="certificaties-image-3">
+            </div>
+            <div class="certificates__arrows">
+                <img src="./icons/products/producrs-arrow-prev.png" alt="products-arrow-prev"
+                    class="certificates__arrows-prev">
+                <img src="./icons/products/products-arrow-next.png" alt="products-arrow-next"
+                    class="certificates__arrows-next">
+            </div>
+        </div>
+    </section>
+    <!-- /.certificates -->
+
+    <section id="customers" class="customers">
+
+        <h2 class="title title_color customers__title">Наши клиенты</h2>
+        <p class="descr customers__descr">
+            Наши клиенты доверяют нам, поскольку в процессе работы с нами <br> убедились – мы ответственно подходим к
+            выполнению задач и предлагаем <br> нефтепродукты на выгодных условиях
+        </p>
+        <div class="customers__wrapper">
+            <img src="./img/customers/customers-image-1.png" alt="customers-image-1" class="customers__image">
+            <img src="./img/customers/customers-image-2.png" alt="customers-image-2" class=" customers__image">
+            <img src="./img/customers/customers-image-3.png" alt="customers-image-3" class=" customers__image">
+            <img src="./img/customers/customers-image-4.png" alt="customers-image-4" class=" customers__image">
+            <img src="./img/customers/customers-image-5.png" alt="customers-image-5" class=" customers__image">
+        </div>
+
+        <div class="customers__wrapper-mobile">
+            <img src="./img/customers/customers-image-1.png" alt="customers-image-1" class="customers__image-mobile">
+            <img src="./img/customers/customers-image-2.png" alt="customers-image-2" class=" customers__image-mobile">
+            <img src="./img/customers/customers-image-3.png" alt="customers-image-3" class=" customers__image-mobile">
+            <img src="./img/customers/customers-image-4.png" alt="customers-image-4" class=" customers__image-mobile">
+            <img src="./img/customers/customers-image-5.png" alt="customers-image-5" class=" customers__image-mobile">
+        </div>
+        <div class="customers__arrows">
+            <img src="./icons/products/producrs-arrow-prev.png" alt="customers-arrow-prev"
+                class="customers__arrows-prev">
+            <img src="./icons/products/products-arrow-next.png" alt="customers-arrow-next"
+                class="customers__arrows-next">
+        </div>
+
+    </section>
+    <!-- ./customers -->
+
+    <div class="quantity">
+        <div class="quantity__wrapper">
+            <div class="quantity__number">
+                200+
+            </div>
+            <p class="quantity__text">
+                крупных и средних компаний заключили с нами договора на поставку топлива
+            </p>
+        </div>
+    </div>
+    <!-- /.quantity -->
+
+    <section id="questions" class="questions">
+        <div class="container">
+            <div class="questions__wrapper">
+                <div class="questions__content">
+                    <h2 class="title questions__title">
+                        Остались вопросы?
+                        <span class="title title_color questions__title-color">Свяжитесь с нами!</span>
+                    </h2>
+                    <div class="questions__contacts-info">
+                        ООО "НефтеПродуктСнаб" <br>
+                        Адрес: 443029, г. Самара, <br>
+                        г. Самара, ул 6 просека, дом 155, пом. 9
+                    </div>
+                    <div class="questions__contacts">
+                        Телефон: <a href="tel:+78462219617">8 (846) 221-96-17</a> <br>
+                        E-mail: <a href="mailto:info@npsnab.com">info@npsnab.com</a>
+                    </div>
+                    <form action="#" class="questions__form">
+                        <input type="text" class="questions__input" placeholder="Ваше имя">
+                        <input type="number" class="questions__input" placeholder="Телефон">
+                        <button class="button questions__button" data-modal>Рассчитать стоимость</button>
+                    </form>
+                </div>
+                <div class="questions__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.4897948416915!2d50.184919335343146!3d53.24492162590562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4166192f81d9847d%3A0x4f265e8ecd18c58b!2zNi3RjyDQv9GA0L7RgdC10LrQsCwgMTU1LCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDMwMjk!5e0!3m2!1sru!2sru!4v1654866130856!5m2!1sru!2sru"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.questions -->
+
+    <footer class="footer">
+        <div class="footer__copy">
+            © 2006-2021. Все права защищены
+        </div>
+    </footer>
+    <!-- ./footer -->
+
+    <div class="overlay hide">
+        <div class="modal__dialog">
+            <div class="modal__dialog-close">
+                <img data-close src="./icons/modal/modal-close.svg" alt="modal-close">
+            </div>
+            <h2 class="title modal__dialog-title">Оформите заявку</h2>
+            <p class="descr modal__dialog-descr">
+                Для сотрудничества с нами <br>
+                оставьте свои данные
+            </p>
+            <form action="#" class="modal__dialog-form">
+                <input type="text" class="modal__dialog-input" placeholder="Введите ваше имя">
+                <input type="number" class="modal__dialog-input" placeholder="Введите ваш телефон">
+                <input type="text" class="modal__dialog-input" placeholder="В каком регионе находитесь">
+                <button class="button modal__dialog-button">Подать заявку</button>
+            </form>
+        </div>
+        <!-- ./modal__dialog -->
+
+        <div class="modal__thanks hide">
+            <div class="modal__thanks-close">
+                <img data-close src="./icons/modal/modal-close.svg" alt="modal-close">
+            </div>
+            <h2 class="title modal__thanks-title">Спасибо за ответы!</h2>
+            <p class="descr modal__thanks-descr">
+                Наш менеджер свяжется с вами <br>
+                в ближайшее время
+            </p>
+            <img src="./img/modal/modal-thanks-image.png" alt="modal-thanks-image" class="modal__thanks-image">
+        </div>
+        <!-- ./modal__thanks -->
+    </div>
+    <!-- ./overlay -->
+
+    <div class="overlay-text hide">
+        <div class="modal-text">
+            <div class="modal-text__close">
+                <img data-close src="./icons/modal/modal-close.svg" alt="modal-close">
+            </div>
+            <p class="modal-text__descr modal-text__descr--first">
+                Наша организация обладает солидным опытом работы. Не раз нам приходилось вести свою деятельность в
+                непростых
+                условиях. За нашими плечами есть успешная поставка нефтепродуктов оптом с последующей заправкой
+                техники в
+                высокогорный район (Красная поляна, 1230 метров над уровнем моря), а также заправка небольших
+                кораблей
+                непосредственно на акватории Черного моря.
+                Мы имеем все необходимые
+                для выполнения таких операций ресурсы.
+            </p>
+            <p class="modal-text__descr">
+                Главный офис «Дизель-Юг» находится в Краснодаре. Также есть филиалы в таких городах, как
+                Ростов-на-Дону,
+                Ставрополь, Симферополь и Воронеж.
+            </p>
+        </div>
+        <!-- ./modal-text -->
+    </div>
+    <!-- ./overlay-text -->
 
     <script src="js/script.js"></script>
 </body>

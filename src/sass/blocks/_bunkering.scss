@@ -1,0 +1,78 @@
+.bunkering {
+    background-color: $color-bg;
+    padding-top: 91px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__descr {
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        position: relative;
+        background-color: $color-bg;
+        min-height: 681px;
+        background: $color-bg url('../img/bunkering/bunkering-bg.png') center (center/ cover) no-repeat;
+    }
+
+    &__ports {
+        width: 505px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    &__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__port {
+        position: relative;
+        padding-left: 35px;
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-main-color;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 0;
+            background: url('../icons/bunkering/bunkering-icon-arrow.svg') center no-repeat;
+        }
+
+    }
+
+    &__port--last {
+        margin-left: 80px;
+    }
+
+    &__port-bold {
+        font-weight: 900;
+    }
+
+    &__button {
+        position: absolute;
+        width: 360px;
+        height: 60px;
+        left: 57%;
+        bottom: 258px;
+    }
+}

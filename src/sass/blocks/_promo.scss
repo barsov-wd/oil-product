@@ -1,0 +1,51 @@
+.promo {
+    padding-top: 25px;
+    background: $color-bg url('../img/promo/promo-bg.png') center (right -35px/ contain) no-repeat;
+
+    &__block {
+        position: relative;
+        padding: 178px 0 313px 0;
+
+    }
+
+    &__title {
+        font-size: 54px;
+        line-height: 50px;
+        font-weight: 900;
+        color: $text-main-color;
+        margin-bottom: 30px;
+
+        &_color {
+            font-size: 54px;
+            font-weight: 900;
+            line-height: 64px;
+            color: $text-color;
+            text-transform: uppercase;
+        }
+
+        &_ttl {
+            text-transform: lowercase;
+            font-weight: 900;
+        }
+    }
+
+    &__subtitle,
+    &__text {
+        font-size: 28px;
+        line-height: 33px;
+        color: $text-main-color;
+    }
+
+    &__subtitle {
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        width: 364px;
+        height: 60px;
+    }
+}
